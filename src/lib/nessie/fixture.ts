@@ -1,6 +1,6 @@
 import type { NessieSnapshot } from "@/lib/types";
 
-export const FIXTURE_CUSTOMER_ID = "fixture-customer-maya";
+export const FIXTURE_CUSTOMER_ID = "fixture-customer-taylor";
 
 export function nessieFixture(): NessieSnapshot {
   return {
@@ -18,9 +18,9 @@ export function nessieFixture(): NessieSnapshot {
     },
     customer: {
       id: FIXTURE_CUSTOMER_ID,
-      firstName: "Maya",
-      lastName: "Chen",
-      address: "1420 Green Street, Arlington, VA 22202",
+      firstName: "Taylor",
+      lastName: "Brooks",
+      address: "410 West Avenue, Austin, TX 78701",
     },
     accounts: [
       {

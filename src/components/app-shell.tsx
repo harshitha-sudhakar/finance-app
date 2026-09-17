@@ -18,12 +18,12 @@ import { useEffect, useState, type ReactNode } from "react";
 
 const links = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
-  { href: "/accounts", label: "Financial data", icon: Settings2 },
+  { href: "/financial-data", label: "Financial data", icon: Settings2 },
   { href: "/forecast", label: "Projection", icon: TrendingUp },
   { href: "/sandbox", label: "What-if", icon: FlaskConical },
 ];
 
-const dataPaths = ["/accounts", "/income", "/obligations", "/pipeline"];
+const dataPaths = ["/financial-data", "/accounts", "/income", "/obligations", "/pipeline"];
 
 export function AppShell({ children }: { children: ReactNode }) {
   const { user, signOut, ready } = useAuth();
@@ -48,7 +48,7 @@ export function AppShell({ children }: { children: ReactNode }) {
     <nav className="grid gap-1 lg:flex lg:flex-row lg:items-center">
       {links.map((link) => {
         const Icon = link.icon;
-        const active = link.href === "/accounts" ? dataPaths.includes(pathname) : pathname === link.href;
+        const active = link.href === "/financial-data" ? dataPaths.includes(pathname) : pathname === link.href;
         return (
           <Link
             key={link.href}

@@ -17,7 +17,8 @@ import { formatLongDate } from "@/lib/dates";
 import { useFinance } from "@/lib/finance-context";
 import { certaintyLabel, formatMoney } from "@/lib/money";
 import type { IncomeEvent } from "@/lib/types";
-import { Wallet } from "lucide-react";
+import { ArrowLeft, Wallet } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function IncomePage() {
@@ -27,6 +28,9 @@ export default function IncomePage() {
 
   return (
     <div className="grid gap-6">
+      <Link href="/financial-data" className="flex w-fit items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground">
+        <ArrowLeft className="size-4" /> Back to financial data
+      </Link>
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <h1 className="font-heading text-3xl tracking-tight">Income</h1>

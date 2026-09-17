@@ -3,9 +3,9 @@ import { createId } from "@/lib/ids";
 import type { SessionUser, UserProfile } from "@/lib/types";
 
 export const DEMO_USER: SessionUser = {
-  uid: "demo-maya",
-  email: "maya@runway.demo",
-  displayName: "Maya Chen",
+  uid: "demo-taylor",
+  email: "taylor@runway.demo",
+  displayName: "Taylor Brooks",
   provider: "demo",
 };
 
@@ -108,7 +108,7 @@ export function demoProfile(): UserProfile {
       horizonDays: 30,
       comfortBuffer: 250,
       dailySpendEstimate: 18,
-      nessieCustomerId: "fixture-customer-maya",
+      nessieCustomerId: "fixture-customer-taylor",
     },
   };
 }

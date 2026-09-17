@@ -54,10 +54,10 @@ export default function LandingPage() {
       <div className="mx-auto grid min-h-screen max-w-6xl items-center gap-10 px-4 py-10 lg:grid-cols-[1.15fr_0.85fr]">
         <section className="max-w-xl">
           <h1 className="font-heading text-5xl leading-[1.05] tracking-tight text-foreground sm:text-6xl">
-            Know how long your money will last.
+            Cash-flow forecast
           </h1>
           <p className="mt-5 max-w-lg text-base leading-7 text-muted-foreground">
-            Add your balances, income, and upcoming bills to see your projected cash flow over the next 30, 60, or 90 days.
+            Track your balances, income, and bills, then view a 30, 60, or 90-day projection.
           </p>
         </section>
 

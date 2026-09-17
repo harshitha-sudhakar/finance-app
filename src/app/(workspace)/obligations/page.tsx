@@ -17,7 +17,8 @@ import { formatLongDate } from "@/lib/dates";
 import { useFinance } from "@/lib/finance-context";
 import { certaintyLabel, formatMoney } from "@/lib/money";
 import type { Obligation } from "@/lib/types";
-import { Activity } from "lucide-react";
+import { Activity, ArrowLeft } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function ObligationsPage() {
@@ -26,6 +27,9 @@ export default function ObligationsPage() {
   const [selected, setSelected] = useState<Obligation | null>(null);
   return (
     <div className="grid gap-6">
+      <Link href="/financial-data" className="flex w-fit items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground">
+        <ArrowLeft className="size-4" /> Back to financial data
+      </Link>
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <h1 className="font-heading text-3xl tracking-tight">Obligations</h1>
