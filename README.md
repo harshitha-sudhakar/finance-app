@@ -1,5 +1,5 @@
 # Runway
 
-Web app to track fluctuating finances
+Web app to track my fluctuating finances
 
 
